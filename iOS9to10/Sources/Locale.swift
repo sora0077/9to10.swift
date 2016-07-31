@@ -15,7 +15,7 @@ extension Locale {
 
         private static var key: UInt8 = 0
 
-        private let locale: Locale
+        private unowned var locale: Locale
 
         public func localizedString(forLocaleIdentifier localeIdentifier: String) -> String {
             if #available(iOS 10, *) {
